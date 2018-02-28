@@ -5,21 +5,21 @@ import android.support.v7.app.AppCompatActivity
 import com.gayratrakhimov.dagger2examples.R
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class FirstActivity : AppCompatActivity() {
 
     @Inject
-    lateinit var myLog: MyLog
+    lateinit var myLog: FirstLogger
 
     @Inject
-    lateinit var myToast: MyToast
+    lateinit var myToast: FirstToaster
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 //        var component = DaggerAppComponent.create()
-        var component = DaggerAppComponent.builder()
-                .appModule(AppModule(this))
+        var component = DaggerFirstComponent.builder()
+                .firstModule(FirstModule(this))
                 .build()
         component.inject(this)
 

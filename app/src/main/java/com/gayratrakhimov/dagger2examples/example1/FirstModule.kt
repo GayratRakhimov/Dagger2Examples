@@ -5,12 +5,12 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class AppModule(private var context: Context) {
+class FirstModule(private var context: Context) {
 
     @Provides
-    fun provideMyLog() = MyLog()
+    fun provideLogger() = FirstLogger()
 
     @Provides
-    fun provideMyToast() = MyToast(context)
+    fun provideToaster() = FirstToaster(context)
 
 }
