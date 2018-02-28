@@ -1,8 +1,6 @@
-package com.gayratrakhimov.dagger2examples
+package com.gayratrakhimov.dagger2examples.example1
 
 import android.content.Context
-import com.gayratrakhimov.dagger2examples.example1.MyLog
-import com.gayratrakhimov.dagger2examples.example1.MyToast
 import dagger.Module
 import dagger.Provides
 
