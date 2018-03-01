@@ -2,11 +2,11 @@ package com.gayratrakhimov.dagger2examples.example2
 
 import android.app.Application
 
-class App : Application(){
+class SecondApp : Application(){
 
     override fun onCreate() {
         super.onCreate()
-        Injector.init(this)
+        SecondInjector.init(this)
     }
 
 }

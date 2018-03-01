@@ -14,7 +14,7 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-        Injector.component.inject(this)
+        SecondInjector.component.inject(this)
 
         secondLogger.log("This is third activity")
 

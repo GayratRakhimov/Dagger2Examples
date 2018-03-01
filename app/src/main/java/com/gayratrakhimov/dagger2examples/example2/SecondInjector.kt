@@ -5,7 +5,7 @@ import android.app.Activity
 import android.content.Context
 
 @SuppressLint("StaticFieldLeak")
-object Injector {
+object SecondInjector {
 
     private lateinit var context: Context
     lateinit var component: SecondComponent
